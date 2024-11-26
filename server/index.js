@@ -8,7 +8,7 @@ const app = express();
 dotenv.config();
 const port = process.env.PORT;
 
-
+console.log("checking github brooooo")
 
 async function main(){
     try{
