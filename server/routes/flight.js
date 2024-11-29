@@ -5,7 +5,7 @@ const flight = express.Router();
 import flightModel from "../models/db.js"
 
 
-flight.post('/', async function(req,res){
+flight.post('/post', async function(req,res){
     const {airlineName,source,destination,price,duration} = req.body;
     await flightModel.create({
         airlineName:airlineName,

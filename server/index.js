@@ -9,8 +9,10 @@ const app = express();
 dotenv.config();
 const port = process.env.PORT;
 app.use(express.json());
+app.use(cors({
+    origin: "http://localhost:3000", 
+  }));
 app.use("/",flight)
-
 
 async function main(){
     try{

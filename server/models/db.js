@@ -11,7 +11,7 @@ const flightSchema = new Schema({
     source: String,
     destination: String,
     price: Number,
-    duration: Number,
+    duration: String,
 });
 
 const flightModel = mongoose.model("flight", flightSchema);
